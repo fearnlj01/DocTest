@@ -44,15 +44,15 @@ Commonly Asked Questions
 To allow users to only see the current song and have a DJ role for queuing follow these five steps: 
 
 	1.	`;sm Music disable`
-1. Disables music commands for everybody
+Disables music commands for everybody
 	2.	`;sc !!nowplaying enable`
-2.	Enables the "nowplaying" command for everyone
+Enables the "nowplaying" command for everyone
 	3.	`;sc !!getlink enable`
-3.	Enables the "getlink" command for everyone
+Enables the "getlink" command for everyone
 	4.	`;sc !!listqueue enable`
-4.	Enables the "listqueue" command for everyone
+Enables the "listqueue" command for everyone
 	5.	`;rm Music enable DJ`
-5. Enables all the music commands only for the DJ role
+Enables all the music commands only for the DJ role
 
 
 ###How do I create a NSFW channel?
