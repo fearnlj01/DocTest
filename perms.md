@@ -43,29 +43,34 @@ Commonly Asked Questions
 ###How do I create a music DJ?
 To allow users to only see the current song and have a DJ role for queuing follow these five steps: 
 
-	1.	`;sm Music disable`
-Disables music commands for everybody
+1.	`;sm Music disable`
 
-	2.	`;sc !!nowplaying enable`
-Enables the "nowplaying" command for everyone
+	*	Disables music commands for everybody
 
-	3.	`;sc !!getlink enable`
-Enables the "getlink" command for everyone
+2.	`;sc !!nowplaying enable`
 
-	4.	`;sc !!listqueue enable`
-Enables the "listqueue" command for everyone
+	*	Enables the "nowplaying" command for everyone
 
-	5.	`;rm Music enable DJ`
-Enables all the music commands only for the DJ role
+3.	`;sc !!getlink enable`
+
+	*	Enables the "getlink" command for everyone
+
+4.	`;sc !!listqueue enable`
+
+	*	Enables the "listqueue" command for everyone
+
+5.	`;rm Music enable DJ`
+
+	*	Enables all the music commands only for the DJ role
 
 
 ###How do I create a NSFW channel?
 Say you want to only enable NSFW commands in the #NSFW channel, just do the following two steps.
 
-	1.	`;sm NSFW disable`
-Disables the NSFW module from being used
+1.	`;sm NSFW disable`
+	*	Disables the NSFW module from being used
 
-	2.	`;cm NSFW enable #NSFW`
-Enables the NSFW module for use in the #NSFW channel
+2.	`;cm NSFW enable #NSFW`
+	*	Enables the NSFW module for use in the #NSFW channel
 
 _-- Thanks to @applemac for providing the template for this guide_
