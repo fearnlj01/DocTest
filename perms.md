@@ -45,12 +45,16 @@ To allow users to only see the current song and have a DJ role for queuing follo
 
 	1.	`;sm Music disable`
 Disables music commands for everybody
+
 	2.	`;sc !!nowplaying enable`
 Enables the "nowplaying" command for everyone
+
 	3.	`;sc !!getlink enable`
 Enables the "getlink" command for everyone
+
 	4.	`;sc !!listqueue enable`
 Enables the "listqueue" command for everyone
+
 	5.	`;rm Music enable DJ`
 Enables all the music commands only for the DJ role
 
@@ -59,8 +63,9 @@ Enables all the music commands only for the DJ role
 Say you want to only enable NSFW commands in the #NSFW channel, just do the following two steps.
 
 	1.	`;sm NSFW disable`
-1. Disables the NSFW module from being used
-	2.	`;cm NSFW enable #NSFW`
-2. Enables the NSFW module for use in the #NSFW channel
+Disables the NSFW module from being used
 
-_-- Thanks to @applemac for providing the template for this guide _
+	2.	`;cm NSFW enable #NSFW`
+Enables the NSFW module for use in the #NSFW channel
+
+_-- Thanks to @applemac for providing the template for this guide_
