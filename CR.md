@@ -17,6 +17,7 @@ You must also use the commands for adding, deleting and listing these reactions 
 `.acr "Nice Weather" It sure is, %user%!`  
 
 This command can be split into two different arguments:  
+
 * 	 The trigger, `"Nice Weather"`  
 * 	 And the response, `It sure is, %user%!`  
 
