@@ -17,8 +17,8 @@ You must also use the commands for adding, deleting and listing these reactions 
 `.acr "Nice Weather" It sure is, %user%!`  
 
 This command can be split into two different arguments:  
-*	The trigger `"Nice Weather"`  
-*	And the response, `It sure is, %user%!`  
+* 	The trigger, `"Nice Weather"`  
+* 	And the response, `It sure is, %user%!`  
 
 Because we wanted the trigger to be more than one word, we had to wrap it with quotation marks, `"Like this"` otherwise, only the first word would have been recognised as the trigger, and the second word would have been recognised as part of the response.  
 
@@ -27,9 +27,9 @@ There's no special requirement for the formatting of the response, so we could j
 ###Placeholders!
 There are currently three different placeholders which we will look at, with more placeholders potentially coming in the future.  
 
-| Placeholder | How the placeholder works | Example Usage | Input | Output |
-|:-----------:|---------------------------|---------------|-------|--------|
-|`%mention`|The `%mention%` placeholder is triggered when you type `@BotName` - It's important to note that if you've given the bot a custom nickname, this trigger won't work!|`.acr "Hello %mention%" I, %mention%, also say hello!`|Hello @BotName|I, @BotName, also say hello!|
+| Placeholder | Description | Example Usage | Input | Output |
+|:-----------:|-------------|---------------|-------|--------|
+|`%mention`|The `%mention%` placeholder is triggered when you type `@BotName` - It's important to note that if you've given the bot a custom nickname, this trigger won't work!|```.acr "Hello %mention%" I,  %mention%, also say hello!```|Hello @BotName|I, @BotName, also say hello!|
 |`%user%`|The `%user%` placeholder mentions the person who said the command|`.acr "Who am I?" You are %user%!`|Who am I?|You are @Username!|
 |`%rng%`|The `%rng%` placeholder generates a random number between 0 and 10|`.acr "Random number" %rng%`|Random number|2|
 
