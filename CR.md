@@ -21,9 +21,11 @@ This command can be split into two different arguments:
 * 	 The trigger, `"Nice Weather"`  
 * 	 And the response, `It sure is, %user%!`  
 
-Because we wanted the trigger to be more than one word, we had to wrap it with quotation marks, `"Like this"` otherwise, only the first word would have been recognised as the trigger, and the second word would have been recognised as part of the response.  
+An important thing to note about the triger is that to be more than one word, we had to wrap it with quotation marks, `"Like this"` otherwise, only the first word would have been recognised as the trigger, and the second word would have been recognised as part of the response.  
 
-There's no special requirement for the formatting of the response, so we could just write it in exactly the same way we want it to respond, albeit with a placeholder - which will be explained in this next section  
+There's no special requirement for the formatting of the response, so we could just write it in exactly the same way we want it to respond, albeit with a placeholder - which will be explained in this next section.  
+
+Now if that command was run in a server, anyone on the server can make the bot mention them, saying `It sure is, @Username` anytime they say "Nice Weather". If the command is ran in a direct message with the bot, then the custom reaction can be sued on every server the bot is connected to.  
 
 ###Placeholders!
 There are currently three different placeholders which we will look at, with more placeholders potentially coming in the future.  
