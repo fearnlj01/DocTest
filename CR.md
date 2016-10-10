@@ -17,8 +17,8 @@ You must also use the commands for adding, deleting and listing these reactions 
 `.acr "Nice Weather" It sure is, %user%!`  
 
 This command can be split into two different arguments:  
-* 	The trigger, `"Nice Weather"`  
-* 	And the response, `It sure is, %user%!`  
+* 	 The trigger, `"Nice Weather"`  
+* 	 And the response, `It sure is, %user%!`  
 
 Because we wanted the trigger to be more than one word, we had to wrap it with quotation marks, `"Like this"` otherwise, only the first word would have been recognised as the trigger, and the second word would have been recognised as part of the response.  
 
