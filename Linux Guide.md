@@ -18,9 +18,9 @@ If you entered your Droplets IP address correctly, it should show **login as:** 
 - It should then, ask for password, type the `root password` you have received in your **email address registered with Digital Ocean**, then hit Enter.
 
 *(as you are running it for the first time, it will most likely to ask you to change your root password, for that, type the "password you received through email", hit Enter, enter a "new password", hit Enter and confirm that "new password" again.*
-**SAVE that new password somewhere safe not just in mind**. After you done that, you are ready to write commands.
+**SAVE that new password somewhere safe, not just in your mind**. After you've done that, you are ready to write commands.
 
-**Copy and just paste** using **mouse right-click** (it should paste automatically)
+**Copy the messages as normal, and just paste** by using **mouse right-click** (it should paste automatically)
 
 ####Installing git
 **1)**
@@ -29,8 +29,10 @@ If you entered your Droplets IP address correctly, it should show **login as:** 
 Note if the command is not being initiated, hit **Enter**
 
 ####Installing dotnet
-Go to [this link](https://www.microsoft.com/net/core#ubuntu) provided by microsoft for instructions on how to get the most up to date version of the dotnet core sdk - make sure that you're on the correct page for your distribution of linux!  
-We'll go over the steps here for ubuntu 16.04 anyway, one of the more common distributions of linux, accurate as of 16/10/2016
+Go to [this link](https://www.microsoft.com/net/core#ubuntu) provided by microsoft for instructions on how to get the most up to date version of the dotnet core sdk!  
+Make sure that you're on the correct page for your distribution of linux as the guides are differrnt for various distributions  
+
+We'll go over the steps here for Ubuntu 16.04 anyway (these will **only** work on Ubuntu 16.04), accurate as of 16/10/2016
 
 **2)**
 ```
@@ -38,37 +40,29 @@ sudo sh -c 'echo "deb [arch=amd64] https://apt-mo.trafficmanager.net/repos/dotne
 
 sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
 
-sudo apt-get update
-
-sudo apt-get install dotnet-dev-1.0.0-preview2-003131 -y
+sudo apt-get update && sudo apt-get install dotnet-dev-1.0.0-preview2-003131 -y
 ```
 
 ####Installing Opus Voice Codec
 **3)**
-`sudo apt-get install libopus0 opus-tools -y`
-
-**4)**
-`sudo apt-get install libopus-dev -y`
+`sudo apt-get install libopus0 opus-tools libopus-dev -y`
 
 ####Installing libsodium
-**5)**
+**4)**
 `sudo apt-get install libsodium-dev -y`
 
 ####FFMPEG
-
-**6)**
+**5)**
 `apt-get install ffmpeg -y`
 
 NOTE: if its "not installing" then, follow the guide here: [FFMPEG Help Guide](http://www.faqforge.com/linux/how-to-install-ffmpeg-on-ubuntu-14-04/)
 
-**If you are running UBUNTU 14.04, you must run these first:**
-
+**If you are running UBUNTU 14.04, you must run these first:**  
 ```
 sudo add-apt-repository ppa:mc3man/trusty-media
 sudo apt-get update
 sudo apt-get dist-upgrade
 ```
-
 *Before executing* `sudo apt-get install ffmpeg`
 
 **If you are running Debian 8 Jessie, please, follow these steps:**
@@ -112,19 +106,13 @@ sudo apt-get update && sudo apt-get install ffmpeg -y`
 
 ####Building NadekoBot
 **13)**
-`cd /NadekoBot/discord.net/src/Discord.Net`
-
-`dotnet restore && dotnet build --configuration Release`
+`cd /NadekoBot/discord.net/src/Discord.Net && dotnet restore && dotnet build --configuration Release`
 
 **14)**
-`cd ../Discord.Net.Commands/`
-
-`dotnet restore && dotnet build --configuration Release`
+`cd ../Discord.Net.Commands/ && dotnet restore && dotnet build --configuration Release`
 
 **15)**
-`cd ../../../src/NadekoBot/`
-
-`dotnet restore && dotnet build --configuration Release`
+`cd ../../../src/NadekoBot/ && dotnet restore && dotnet build --configuration Release`
 
 **16)**
 `sudo cp ./bin/Release/netcoreapp1.0/libs/* ./bin/Release/netcoreapp1.0/data/`
@@ -134,7 +122,7 @@ sudo apt-get update && sudo apt-get install ffmpeg -y`
 **17)**
 `dotnet run --configuration Release`
 
-This will generate a copy of `credentials_example.json` to be used below 
+This will generate a copy of `credentials_example.json` to be used below:  
 - Open **CyberDuck**
 - Click on **Open Connection** (top-left corner), a new window should appear.
 - You should see **FTP (File Transfer Protocol)** in drop-down.
