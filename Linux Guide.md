@@ -105,8 +105,7 @@ sudo apt-get update && sudo apt-get install ffmpeg -y`
 `git clone -b 1.0 --recursive https://github.com/Kwoth/NadekoBot.git
 
 ####Building NadekoBot
-**13)**
-`cd /NadekoBot/discord.net/src/Discord.Net && dotnet restore && dotnet build --configuration Release`
+**13)** `cd /NadekoBot/discord.net/src/Discord.Net && dotnet restore && dotnet build --configuration Release`
 
 **14)**
 `cd ../Discord.Net.Commands/ && dotnet restore && dotnet build --configuration Release`
@@ -169,15 +168,16 @@ For how to set up Nadeko for music and Google API Keys, follow [Setting up Nadek
 
 Now time to **move bot to background** and to do that, press **CTRL+B+D** (this will detach the nadeko session using TMUX), and you can finally close PuTTY now.
 
-Copy your CLIENT ID (that's in the same Developer page where you brought your token) and replace `12345678` in this link: `https://discordapp.com/oauth2/authorize?client_id=12345678&scope=bot&permissions=66186303` with it. Go to that link and you will be able to add your bot to your server.
+Copy your CLIENT ID (In the same Developer page where you got your token!) and replace `12345678` in this link: `https://discordapp.com/oauth2/authorize?client_id=12345678&scope=bot&permissions=66186303` with it.
+  Go to that link and you will be able to add your bot to your server.
 
 **NOW YOU HAVE YOUR OWN NADEKO BOT** `Thanks to Kwoth <3`
 
 ####Some more Info (just in case)
 
--If you want to **see the sessions** after logging back again, type `tmux ls`, and that will give you the list of sessions running.
--If you want to **switch to/ see that session**, type `tmux a -t nadeko` (**nadeko** is the name of the session we created before so, replace **“nadeko”** with the session name you created.)
--If you want to **kill** NadekoBot **session**, type `tmux kill-session -t nadeko`
+- If you want to **see the sessions** after logging back again, type `tmux ls`, and that will give you the list of sessions running.
+- If you want to **switch to/ see that session**, type `tmux a -t nadeko` (**nadeko** is the name of the session we created before so, replace **“nadeko”** with the session name you created.)
+- If you want to **kill** NadekoBot **session**, type `tmux kill-session -t nadeko`
 
 ####Restarting Nadeko with the Server
 Open **PuTTY** and login as you have before, type `reboot` and hit Enter.
@@ -192,4 +192,4 @@ Open **PuTTY** and login as you have before, type `reboot` and hit Enter.
 
 HIT **CTRL+B+D** and close **PuTTY**
 
-`IF YOU FACE ANY TROUBLE ANYWHERE IN THE GUIDE JUST FIND US IN NADEKO'S DISCORD SERVER`
+*IF YOU FACE ANY TROUBLE ANYWHERE IN THE GUIDE JUST FIND US IN [NADEKO'S DISCORD SERVER](https://discord.gg/0ehQwTK2RBjAxzEY)*
