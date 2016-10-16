@@ -1,10 +1,9 @@
 site_name: NotNadekoBot
 repo_url: https://github.com/fearnlj01/DocTest
 pages:
-- Guides:
-    - Windows Guide - Done: Windows Guide.md
-    - Linux Guide - Done: Linux Guide.md
-    - OSX Guide - Not Done: OSX Guide.md
-    - Upgrading from pre 1.0: Upgrading Guide.md
+- Windows Guide - Done: Windows Guide.md
+- Linux Guide - Done: Linux Guide.md
+- OSX Guide - Not Done: OSX Guide.md
+- Upgrading from pre 1.0: Upgrading Guide.md
 
 theme: readthedocs
