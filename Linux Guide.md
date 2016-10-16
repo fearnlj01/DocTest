@@ -123,6 +123,7 @@ sudo apt-get update && sudo apt-get install ffmpeg -y`
 `dotnet run --configuration Release`
 
 This will generate a copy of `credentials_example.json` to be used below:  
+
 - Open **CyberDuck**
 - Click on **Open Connection** (top-left corner), a new window should appear.
 - You should see **FTP (File Transfer Protocol)** in drop-down.
