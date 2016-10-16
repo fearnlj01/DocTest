@@ -82,7 +82,7 @@ sudo apt-get update && sudo apt-get install ffmpeg -y`
 **7)**
 `apt-get install ufw`
 
-**it is most likely to have it already installed so if you see it is already installed, check with following command, and/or enable it**
+**It is likely to have been pre-installed so if you see that it is installed, check it works with the following command, and/or enable it**
 
 **8)**
 `ufw status`
@@ -90,22 +90,23 @@ sudo apt-get update && sudo apt-get install ffmpeg -y`
 **9)**
 `ufw enable`
 
-**Type** `y` **hit Enter**
+**Type** `y` ** and hit Enter**
 
 **10)**
 `sudo ufw allow ssh`
 
 ####Installing TMUX
 **11)**
-`apt-get install tmux -y`
+`sudo apt-get install tmux -y`
 
 ####Getting NadekoBot
 
 **12)**
-`git clone -b 1.0 --recursive https://github.com/Kwoth/NadekoBot.git
+`git clone -b 1.0 --recursive https://github.com/Kwoth/NadekoBot.git`
 
 ####Building NadekoBot
-**13)** `cd /NadekoBot/discord.net/src/Discord.Net && dotnet restore && dotnet build --configuration Release`
+**13)** `cd /NadekoBot/discord.net/src/Discord.Net`  
+`dotnet restore && dotnet build --configuration Release`
 
 **14)**
 `cd ../Discord.Net.Commands/ && dotnet restore && dotnet build --configuration Release`
