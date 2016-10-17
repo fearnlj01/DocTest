@@ -3,7 +3,7 @@ repo_url: https://github.com/fearnlj01/DocTest
 pages:
 - Windows Guide - Done: Windows Guide.md
 - Linux Guide - Done: Linux Guide.md
-- OSX Guide - Not Done: OSX Guide.md
-- Upgrading from pre 1.0: Upgrading Guide.md
+- OSX Guide - Done: OSX Guide.md
+- Upgrading from pre 1.0 - TODO: Upgrading Guide.md
 
 theme: readthedocs
