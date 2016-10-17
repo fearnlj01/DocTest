@@ -129,6 +129,12 @@ Now time to move bot to background and to do that, press CTRL+B+D (this will dit
 
 For Music Setup and API keys check [Setting up NadekoBot for Music](http://nadekobot.readthedocs.io/en/1.0/guides/Windows%20Guide/#setting-up-nadekobot-for-music) and [JSON Explanations](http://nadekobot.readthedocs.io/en/1.0/JSON%20Explanations/).
 
+####Updating Nadeko
+
+Nadeko is really easy to update as of version 1.0! just copy and paste the command below to update Nadeko to the latest version
+
+`cd ~/NadekoBot/ && git init && git pull`
+
 ####Some more Info - TMUX
 
 - If you want to see the sessions after logging back again, type `tmux ls`, and that will give you the list of sessions running. 
