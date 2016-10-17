@@ -94,7 +94,7 @@ or if you want to use Screen, run:
 `screen -S nadeko`
 
 ^this will create a new screen named “nadeko”  
-`(you can replace “nadeko” with anything you prefer and remember its yourscreen name)`.
+`(you can replace “nadeko” with anything you prefer and remember its your screen name)`.
 
 `cd ~/NadekoBot/src/NadekoBot/`
 
