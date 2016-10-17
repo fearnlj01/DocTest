@@ -4,14 +4,14 @@ ________________________________________________________________________________
 
 ### Setting Up NadekoBot on Windows
 #### Prerequisites 
-- 1) [NET Framework][NET Framework] 4.5.2 (or 4.6)
-- 2) [.NET core SDK][.NET SDK]
-- 3) [Git][Git]
-- 4) [FFMPEG][FFMPEG] 
-- 5) Google Account
-- 6) Soundcloud Account (if you want soundcloud support)
-- 7) [7zip][7zip] (or whatever you are using, WinRar)
-- 8) [Notepad++][Notepad++]
+- 1) [.NET core SDK][.NET SDK]
+- 2) [Git][Git]
+- 3) [FFMPEG][FFMPEG] 
+- 4) Google Account
+- 5) Soundcloud Account (if you want soundcloud support)
+- 6) [7zip][7zip] (or whatever you are using, WinRar)
+- 7) [Notepad++][Notepad++]
+- 8) Windows 8 or newer
 
 ####Guide 
 - Make sure you have installed both [Git][Git] and the [.NET core sdk][.NET SDK]
