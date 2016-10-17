@@ -16,14 +16,14 @@ ________________________________________________________________________________
 ####Guide 
 - Make sure you have installed both [Git][Git] and the [.NET core sdk][.NET SDK]
 - Create a folder somewhere and name it `Nadeko`.
-- Head to the [NadekoBot Releases Page][Releases] and download `ZipContainingAllTheInstallerFiles`.
-- Copy `ZipContainingAllTheInstallerFiles` to the `Nadeko` folder that we created earlier, and extract everything.
+- Head to the [I Need Clarification for this bit The link will suffice for now](https://github.com/fearnlj01/NadekoBotInstallerWin/releases) and download the source code zip.
+- Copy the source code zip to the `Nadeko` folder that we created earlier, and extract everything.
 - You will see a few files, most importantly, `NadekoInstaller.bat ` after extraction (You may not see the `.bat` part of the filename).
 - Run/Launch/Open `NadekoInstaller.bat ` and you will see it running in the command prompt.
 - Wait a while for the file to finish installing, it'll say when it's done in the command prompt.
 - You should now have a new folder named `NadekoBot` inside the `Nadeko` folder we previously created.
 - Run the `NadekoRun.bat` file and wait for windows to tell you dotnet has crashed, then choose to close 
-- If it still exists, you can safely delete the `NadekoInstall_Temp` folder.
+- You can safely delete the `NadekoInstall_Temp` folder if you so choose.
 
 ####Creating DiscordBot application
 - Go to [the Discord developer application page][DiscordApp].
@@ -35,7 +35,7 @@ ________________________________________________________________________________
 - Keep this window open for now.
 
 ####Setting up Credentials.json file
-- In our `NadekoBot` folder you should have another `NadekoBot` folder, then a `src` folder, then *another* `NadekoBot` folder, in this final folder, you should see a `.json` file named `credentials_example.json`. (Note: If you do not see a **.json** after `credentials_example.json `, do not add the `**.json**`. You most likely have `"Hide file extensions"` enabled.)
+- In our `NadekoBot` folder you see a `src` folder, then *another* `NadekoBot` folder, in this final folder, you should see a `.json` file named `credentials_example.json`. (Note: If you do not see a **.json** after `credentials_example.json `, do not add the `**.json**`. You most likely have `"Hide file extensions"` enabled.)
 - Rename `credentials_example.json` to `credentials.json`.
 - Open the file with [Notepad++][Notepad++].
 - In there you will see fields such as `Token`, `ClientId`, `BotId` and `OwnerIDs`.
@@ -62,7 +62,7 @@ ________________________________________________________________________________
 ####Setting up OwnerIds
 - In the server where your bot is, in a text channel, type `.uid`
 - Your `User ID` should show, copy it.
-- Close `NadekoBot.exe`
+- Close `NadekoBot`
 - Replace the `null` section on the `OwnerIds` line with your user ID shown earlier and put a square bracket around each end of the ID like so, `[105635576866156544]`
 - Run `NadekoRun.bat` again.
 - If done correctly, you are now the bot owner.
@@ -106,7 +106,6 @@ ________________________________________________________________________________
 [Git]: https://git-scm.com/download/win
 [FFMPEG]: https://github.com/Soundofdarkness/FFMPEG-Installer
 [7zip]: http://www.7-zip.org/download.html
-[Releases]: https://github.com/Kwoth/NadekoBot/releases
 [DiscordApp]: https://discordapp.com/developers/applications/me
 [Notepad++]: https://notepad-plus-plus.org/
 [Invite Guide]: http://discord.kongslien.net/guide.html
