@@ -16,7 +16,7 @@ ________________________________________________________________________________
 ####Guide 
 - Make sure you have installed both [Git][Git] and the [.NET Core SDK][.NET Core SDK].
 - Create a folder somewhere and name it `Nadeko`.
-- Head to the [Windows Installer releases page](https://github.com/fearnlj01/NadekoBotInstallerWin/releases) and download the latest source code zip.
+- Head to the [Windows Installer releases page][WinInstaller] and download the latest source code zip.
 - Extract the contents of the zip you just downloaded to the `Nadeko` folder that we created earlier.
 - You will see a few files, most importantly, `NadekoInstaller.bat ` after extraction (You may not see the `.bat` part of the filename).
 - Run/Launch/Open `NadekoInstaller.bat ` and you will see it running in the command prompt.
@@ -39,9 +39,9 @@ ________________________________________________________________________________
 - Open the file with [Notepad++][Notepad++].
 - In there you will see fields such as `Token`, `ClientId`, `BotId` and `OwnerIDs`.
 - In your [applications page][DiscordApp] (the window you were asked to keep open earlier), under the `Bot User` section, you will see `Token:click to reveal`, click to reveal the token.
-- Copy your bot's token, and on the `"Token"` line of your `credentials.json`, replace `null` with your bot token and put quotation marks before and after the token, like so `"Example.Token"`
-- Copy the `Client ID` on the page and replace the null part of the `ClientId` line with it, and put quotation marks before and after, like earlier.
-- Again, copy the same `Client ID` and replace the null part of the `BotId` line with it, and do **not** put quotation marks before and after the ID.
+- Copy your bot's token, and on the `"Token"` line of your `credentials.json`, paste your bot token between the quotation marks.
+- Copy the `Client ID` on the page and replace the `12312123` part of the `ClientId` line with it.
+- Again, copy the same `Client ID` and replace the `null` part of the `BotId` line with it.
 - Save your `credentials.json` but keep it open. We need to add your `User ID` as one of the `OwnerIds` shortly.
 
 ####Inviting your bot to your server 
@@ -62,7 +62,7 @@ ________________________________________________________________________________
 - In the server where your bot is, in a text channel, type `.uid`
 - Your `User ID` should show, copy it.
 - Close `NadekoBot`
-- Replace the `null` section on the `OwnerIds` line with your user ID shown earlier and put a square bracket around each end of the ID like so, `[105635576866156544]`
+- Replace the `0` on the `OwnerIds` section with your user ID shown earlier.
 - Run `NadekoRun.bat` again.
 - If done correctly, you are now the bot owner.
 - You can add multiple owner IDs by seperating them with a comma within the square brackets.
@@ -95,14 +95,15 @@ ________________________________________________________________________________
 - Create a folder named `ffmpeg` in your main Windows directory. We will use **C:\ffmpeg** (for our guide)
 - Download FFMPEG through the link https://ffmpeg.zeranoe.com/builds/ (download static build)
 - Extract it using `7zip` and place the folder `ffmpeg-xxxxx-git-xxxxx-xxxx-static` inside **C:\ffmpeg**
-- Before proceeding, check out this gif to set up `ffmpeg` PATH correctly http://i.imgur.com/aR5l1Hn.gif *(thanks to PooPeePants#7135)*
+- Before proceeding, check out this gif to set up `ffmpeg` PATH correctly [http://i.imgur.com/aR5l1Hn.gif](http://i.imgur.com/aR5l1Hn.gif) *(thanks to PooPeePants#7135)*
 - Go to My Computer, right click and select Properties. On the left tab, select Advanced System Settings. Under the Advanced tab, select Environmental Variables near the bottom. One of the variables should be called "Path". Add a semi-colon (;) to the end followed by your FFMPEG's **bin** install location (**for example C:\ffmpeg\ffmpeg-xxxxx-git-xxxxx-xxxx-static\bin**). Save and close.
 - Setup your API keys as explained above.
 - Restart your computer.
 
 [.NET Core SDK]: https://go.microsoft.com/fwlink/?LinkID=827524
 [Git]: https://git-scm.com/download/win
-[FFMPEG]: https://github.com/Soundofdarkness/FFMPEG-Installer
+[WinInstaller]: https://github.com/fearnlj01/NadekoBotInstallerWin/releases
+[FFMPEG]: https://github.com/Soundofdarkness/FFMPEG-Inst/releases
 [7zip]: http://www.7-zip.org/download.html
 [DiscordApp]: https://discordapp.com/developers/applications/me
 [Notepad++]: https://notepad-plus-plus.org/
