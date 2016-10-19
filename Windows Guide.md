@@ -4,7 +4,7 @@ ________________________________________________________________________________
 
 ### Setting Up NadekoBot on Windows
 #### Prerequisites 
-- 1) [.NET core SDK][.NET SDK]
+- 1) [.NET Core SDK][.NET Core SDK]
 - 2) [Git][Git]
 - 3) [FFMPEG][FFMPEG] 
 - 4) Google Account
@@ -14,15 +14,14 @@ ________________________________________________________________________________
 - 8) Windows 8 or newer
 
 ####Guide 
-- Make sure you have installed both [Git][Git] and the [.NET core sdk][.NET SDK]
+- Make sure you have installed both [Git][Git] and the [.NET Core SDK][.NET Core SDK].
 - Create a folder somewhere and name it `Nadeko`.
-- Head to the [I Need Clarification for this bit The link will suffice for now](https://github.com/fearnlj01/NadekoBotInstallerWin/releases) and download the source code zip.
-- Copy the source code zip to the `Nadeko` folder that we created earlier, and extract everything.
+- Head to the [Windows Installer releases page](https://github.com/fearnlj01/NadekoBotInstallerWin/releases) and download the latest source code zip.
+- Extract the contents of the zip you just downloaded to the `Nadeko` folder that we created earlier.
 - You will see a few files, most importantly, `NadekoInstaller.bat ` after extraction (You may not see the `.bat` part of the filename).
 - Run/Launch/Open `NadekoInstaller.bat ` and you will see it running in the command prompt.
 - Wait a while for the file to finish installing, it'll say when it's done in the command prompt.
 - You should now have a new folder named `NadekoBot` inside the `Nadeko` folder we previously created.
-- Run the `NadekoRun.bat` file and wait for windows to tell you dotnet has crashed, then choose to close 
 - You can safely delete the `NadekoInstall_Temp` folder if you so choose.
 
 ####Creating DiscordBot application
@@ -56,7 +55,7 @@ ________________________________________________________________________________
 
 ####Starting the bot
 - Go to the folder which you extracted the zip to earlier, and run the `NadekoRun.bat` file
-- Your bot should now be online in the server we added him to.
+- Your bot should now be online in the server we added her to.
 - Note: Your bot will be offline in case you close the `NadekoBot` command prompt window.
 
 ####Setting up OwnerIds
@@ -101,8 +100,7 @@ ________________________________________________________________________________
 - Setup your API keys as explained above.
 - Restart your computer.
 
-[NET Framework]: https://www.microsoft.com/en-us/download/details.aspx?id=48130
-[.NET SDK]: https://www.microsoft.com/net/core#windows
+[.NET Core SDK]: https://go.microsoft.com/fwlink/?LinkID=827524
 [Git]: https://git-scm.com/download/win
 [FFMPEG]: https://github.com/Soundofdarkness/FFMPEG-Installer
 [7zip]: http://www.7-zip.org/download.html
