@@ -22,13 +22,12 @@ If you entered your Droplets IP address correctly, it should show **login as:** 
 
 **Copy the messages as normal, and just paste** by using **mouse right-click** (it should paste automatically)
 
-####Installing git
+####Installing git and dotnet
 **1)**
 `sudo apt-get install git -y`
 
 Note if the command is not being initiated, hit **Enter**
 
-####Installing dotnet
 Go to [this link](https://www.microsoft.com/net/core#ubuntu) provided by microsoft for instructions on how to get the most up to date version of the dotnet core sdk!  
 Make sure that you're on the correct page for your distribution of linux as the guides are differrnt for various distributions  
 
@@ -43,16 +42,12 @@ sudo apt-key adv --keyserver apt-mo.trafficmanager.net --recv-keys 417A0893
 sudo apt-get update && sudo apt-get install dotnet-dev-1.0.0-preview2-003131 -y
 ```
 
-####Installing Opus Voice Codec
+####Installing Opus Voice Codec and libsodium
 **3)**
-`sudo apt-get install libopus0 opus-tools libopus-dev -y`
-
-####Installing libsodium
-**4)**
-`sudo apt-get install libsodium-dev -y`
+`sudo apt-get install libopus0 opus-tools libopus-dev libsodium-dev -y`
 
 ####FFMPEG
-**5)**
+**4)**
 `apt-get install ffmpeg -y`
 
 NOTE: if its "not installing" then, follow the guide here: [FFMPEG Help Guide](http://www.faqforge.com/linux/how-to-install-ffmpeg-on-ubuntu-14-04/)
@@ -79,50 +74,42 @@ sudo apt-get update && sudo apt-get install ffmpeg -y`
 
 ####Uncomplicated Firewall UFW
 
-**7)**
+**5)**
 `apt-get install ufw`
 
 **It is likely to have been pre-installed so if you see that it is installed, check it works with the following command, and/or enable it**
 
-**8)**
+**6)**
 `ufw status`
 
-**9)**
+**7)**
 `ufw enable`
 
 **Type** `y` ** and hit Enter**
 
-**10)**
+**8)**
 `sudo ufw allow ssh`
 
 ####Installing TMUX
-**11)**
+**9)**
 `sudo apt-get install tmux -y`
 
 ####Getting NadekoBot
 
-**12)**
+**10)**
 `git clone -b 1.0 --recursive https://github.com/Kwoth/NadekoBot.git`
 
 ####Building NadekoBot
-**13)** `cd /NadekoBot/discord.net/src/Discord.Net`  
+**11)** `cd /NadekoBot/discord.net/src/Discord.Net`  
 `dotnet restore && dotnet build --configuration Release`
 
-**14)**
+**12)**
 `cd ../Discord.Net.Commands/ && dotnet restore && dotnet build --configuration Release`
 
-**15)**
+**13)**
 `cd ../../../src/NadekoBot/ && dotnet restore && dotnet build --configuration Release`
 
-**16)**
-`sudo cp ./bin/Release/netcoreapp1.0/libs/* ./bin/Release/netcoreapp1.0/data/`
-
-####Setting up NadekoBot
-
-**17)**
-`dotnet run --configuration Release`
-
-This will generate a copy of `credentials_example.json` to be used below:  
+####Setting up NadekoBot 
 
 - Open **CyberDuck**
 - Click on **Open Connection** (top-left corner), a new window should appear.
@@ -148,14 +135,14 @@ This will generate a copy of `credentials_example.json` to be used below:
 
 Go back to **PuTTY**, `(hope its still running xD)`
 
-**19)**
+**14)**
 Type/ Copy and hit **Enter**.
 
 `tmux new -s nadeko`  
 `cd NadekoBot/src/NadekoBot/`  
 **^this will create a new session named “nadeko”** *(you can replace “nadeko” with anything you prefer and remember its your session name)* so you can run the bot in background without having to keep running PuTTY in the background.
 
-**20)**
+**15)**
 `dotnet run --configuration Release`
 
 **CHECK THE BOT IN DISCORD, IF EVERYTHING IS WORKING**
