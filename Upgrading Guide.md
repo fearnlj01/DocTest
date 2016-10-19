@@ -1,7 +1,7 @@
 ###Upgrading Nadeko from an older release
 
 - Navigate to your old nadeko folder
-- Follow the correct install process for your operating system, linked on the left hand side
+- Follow the correct install process for your operating system, linked on the left hand side. Nadeko has some new dependencies, so make sure you get these as guided!
 - For upgrading, you can use your old credentials file without any issues and most data can also be migrated
 - Copy both the data folder and `credentials.json` from your old Nadeko installation, to the following folder
 - `NadekoBot\src\NadekoBot` - This may ask if you want to overwrite some files, this is perfectly fine to do.
