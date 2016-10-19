@@ -57,8 +57,6 @@ A dialog box will open asking if you want to install `xcode-select`. Select inst
 - `dotnet restore && dotnet build --configuration Release`
 - `cd ../../../src/NadekoBot/`
 - `dotnet restore && dotnet build --configuration Release`
-- `cp ./bin/Release/netcoreapp1.0/libs/* ./bin/Release/netcoreapp1.0/data/`
-- `cd ~/NadekoBot/src/NadekoBot`
 - `dotnet run --configuration Release`
 - The above step **will** crash, giving you an error, which will say that `credentials_example.json` has been generated, we'll use this soon
 
@@ -72,8 +70,8 @@ A dialog box will open asking if you want to install `xcode-select`. Select inst
 - Keep this window open for now.
  
 ####Setting up Credentials.json file
-- Open up the `NadekoBot` folder, which should be in your home directory, then the `src` folder.
-- In our `src` folder you should have `.json` file named `credentials_example.json`. (Note: If you do not see a **.json** after `credentials_example.json `, do not add the `**.json**`. You most likely have `"Hide file extensions"` enabled.)
+- Open up the `NadekoBot` folder, which should be in your home directory, then the `src` folder and then the additonal `NadekoBot` folder.
+- In our `NadekoBot` folder you should have `.json` file named `credentials_example.json`. (Note: If you do not see a **.json** after `credentials_example.json `, do not add the `**.json**`. You most likely have `"Hide file extensions"` enabled.)
 - Rename `credentials_example.json` to `credentials.json`.
 - Open the file with your Text editor.
 - In your [applications page][DiscordApp] (the window you were asked to keep open earlier), under the `Bot User` section, you will see `Token:click to reveal`, click to reveal the token.
