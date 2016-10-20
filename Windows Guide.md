@@ -6,7 +6,7 @@ ________________________________________________________________________________
 #### Prerequisites 
 - 1) [.NET Core SDK][.NET Core SDK]
 - 2) [Git][Git]
-- 3) [FFMPEG][FFMPEG] 
+- 3) [FFMPEG][FFMPEG]
 - 4) Google Account
 - 5) Soundcloud Account (if you want soundcloud support)
 - 6) [7zip][7zip] (or whatever you are using, WinRar)
@@ -15,12 +15,12 @@ ________________________________________________________________________________
 
 ####Guide 
 - Make sure you have installed both [Git][Git] and the [.NET Core SDK][.NET Core SDK].
-- Create a folder somewhere and name it `Nadeko`.
+- Create a folder somewhere (for example, your desktop) and name it `Nadeko`.
 - Head to the [Windows Installer releases page][WinInstaller] and download the latest source code zip.
-- Extract the contents of the zip you just downloaded to the `Nadeko` folder that we created earlier.
+- Extract the contents of the zip you just downloaded into the `Nadeko` folder that we created earlier.
 - You will see a few files, most importantly, `NadekoInstaller.bat ` after extraction (You may not see the `.bat` part of the filename).
-- Run/Launch/Open `NadekoInstaller.bat ` and you will see it running in the command prompt.
-- Wait a while for the file to finish installing, it'll say when it's done in the command prompt.
+- Run/Launch/Open `NadekoInstaller.bat ` and you will see it running inside the command prompt.
+- Wait a while for the file to finish installing, it'll show you it's progress in the command prompt.
 - You should now have a new folder named `NadekoBot` inside the `Nadeko` folder we previously created.
 - You can safely delete the `NadekoInstall_Temp` folder if you so choose.
 
@@ -49,20 +49,20 @@ ________________________________________________________________________________
 - Create a new server in Discord.
 - Copy your `Client ID` from your [applications page][DiscordApp].
 - Replace the `12345678` in this link `https://discordapp.com/oauth2/authorize?client_id=12345678&scope=bot&permissions=66186303` with your `Client ID`.
-- The link should now look like this: `https://discordapp.com/oauth2/authorize?client_id=**YOUR_CLENT_ID**&scope=bot&permissions=66186303`.
+- The link should now look like this: `https://discordapp.com/oauth2/authorize?client_id=**YOUR_CLENT_ID_HERE**&scope=bot&permissions=66186303`.
 - Go to the newly created link and pick the server we created, and click `Authorize`.
 - The bot should have been added to your new server.
 
 ####Starting the bot
-- Go to the folder which you extracted the zip to earlier, and run the `NadekoRun.bat` file
+- Go to the `Nadeko` folder we created earlier, and run the `NadekoRun.bat` file
 - Your bot should now be online in the server we added her to.
-- Note: Your bot will be offline in case you close the `NadekoBot` command prompt window.
+- Note: Your bot will stop running and be offline if you close the `NadekoBot` command prompt window.
 
 ####Setting up OwnerIds
 - In the server where your bot is, in a text channel, type `.uid`
 - Your `User ID` should show, copy it.
 - Close `NadekoBot`
-- Replace the `0` on the `OwnerIds` section with your user ID shown earlier.
+- Replace the `0` in the `OwnerIds` section with your user ID shown earlier.
 - Run `NadekoRun.bat` again.
 - If done correctly, you are now the bot owner.
 - You can add multiple owner IDs by seperating them with a comma within the square brackets.
