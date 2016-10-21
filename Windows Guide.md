@@ -62,7 +62,7 @@ ________________________________________________________________________________
 - In the server where your bot is, in a text channel, type `.uid`
 - Your `User ID` should show, copy it.
 - Close `NadekoBot`
-- Replace the `0` in the `OwnerIds` section with your user ID shown earlier.
+- Replace the `0` in the `OwnerIds` section with your user ID shown earlier then save the file.
 - Run `NadekoRun.bat` again.
 - If done correctly, you are now the bot owner.
 - You can add multiple owner IDs by seperating them with a comma within the square brackets.
